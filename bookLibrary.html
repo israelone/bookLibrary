@@ -1,0 +1,72 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <title>Book Library</title>
+    <link rel="stylesheet" type"text/css" href="bookLibrary.css">
+    <!-- <script src="bookLibrary.js"></script> -->
+    <script src="https://kit.fontawesome.com/91e5a107a3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <div id='libraryDisplay'>
+        
+    </div>
+
+        <div id="form"> 
+
+        <form name="myForm" id="bookForm">
+            <h1>Add book</h1>
+            <div id="bookName">
+                <div class="labels">
+                    <label for="title" id="titleLabel">Title:</label>
+                </div>
+                <div class="inputs">
+                    <input class="answers" id="title" type="text" name="title" placeholder="Enter book title" required>
+                </div>
+            </div>
+
+            <div id="bookAuthor">
+                <div class="labels">
+                    <label for="author" id="authorLabel">Author:</label>
+                </div>
+                <div class="inputs">
+                    <input class="answers" id="author" type="text" name="author" placeholder="Enter book author" required>
+                </div>
+            </div>
+
+            <div id="bookPages">
+                <div class="labels">
+                    <label for="pages" id="pagesLabel">Number of Pages:</label>
+                </div>
+                <div class="inputs">
+                    <input class="answers" id="pages" type="number" name="pages" placeholder="Enter number of pages" maxlength="125" min="1" max="10000" step="1" required>
+                </div>
+            </div>
+            
+            <div class="read">
+
+				<div class="labels">
+					<label for="read" class="read">Have you read it?:</label>
+				</div>
+
+				<div class="inputs">
+					<select class="answers" id="dropdown">
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+
+				</div>
+            </div>
+            <div id="buttons">
+            <button type="button" onclick="addToLibrary()">Add</button>
+            <button type="button" onclick="cancelAddition()">Cancel</button>
+            </div>
+        </form>
+        </div>
+    
+    <script src="bookLibrary.js"></script>
+</body>
+</html>
